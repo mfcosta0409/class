@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+header {
+    background-color: #76C53E;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: fff;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+main {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #000000;
+}
+
+.recipe-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.recipe {
+    text-align: center;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 13px;
+    color: #fff;
+    font-size: 10pt;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smartphones (small screens) */
+@media (min-width: 320px) and (max-width: 600px) {
+    .recipe-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+    color: #fff;
+    }
+}
+
+/* For tablets (medium screens) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .recipe-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    color: #fff;
+    }
+}
+
+/* For laptops (large screens) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .recipe-container {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    color: #FFFFFF;
+    }
+}
+
+/* For desktop computers (extra large screens) */
+@media (min-width: 1441px) {
+    .recipe-container {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for large desktop screens */
+    color: #FFFFFF;
+    }
+}
