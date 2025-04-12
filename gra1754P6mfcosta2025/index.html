@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gaia's Garden | Andrea Landaverde, 2024</title>
+<link rel="stylesheet" href="https://use.typekit.net/myh2axy.css">
+<link rel="stylesheet" href="https://use.typekit.net/myh2axy.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+
+<style type="text/css">
+body {
+    margin: 0;
+}
+wrapper {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+header {
+    padding: 20px;
+    background-color: white;
+}
+#nav {
+    display: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #D9A05B;
+}
+section {
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+    font-size: 18px;
+	font-family: "pt-sans", sans-serif;
+	font-style: normal;
+}
+ul li {
+    color: #FFFFFF;
+   	font-family: "rumba-large", sans-serif;
+	font-style: normal;
+    padding: 10px;
+    list-style-type: none;
+	font-size: 20px;
+}
+ul {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.minor {
+    background-color: #D9A05B;
+	color: white;
+}
+h2 {
+    font-family: "rumba-large", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+}
+h3 {
+    font-family: "rumba-small", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    font-family: "pt-sans", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#icon {
+    width: 50px;
+}
+#x_icon {
+    width: 50px;
+}
+.logo {
+    text-align: right;
+    vertical-align: right;
+}
+.aboutlist {
+    padding: 0;
+    margin: 0;
+    list-style-type: square;
+}
+/*This the beginning of the tablet query*/
+@media (min-width:800px){
+.services {
+    display: inline-block;
+    width: 46%;
+    margin: 12px;
+    vertical-align: top;
+}
+.minor {
+    background-color: #D9A05B;
+}
+}	
+/*This the beginning of the laptop query*/
+@media (min-width:1200px){
+wrapper {
+    max-width: 1366px;
+}
+.services {
+    display: inline-block;
+    margin: 7px;
+    width: 23.5%;
+    text-align: left;
+    vertical-align: top;
+}
+.minor {
+    /* [disabled]width: 49%; */
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #D9A05B;
+}
+#icon {
+    display: none;
+    width: auto;
+}
+#nav {
+    padding: Set Shorthand;
+    display: block;
+    background-color: #D9A05B;
+}
+ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.about {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+#work {
+    /* [disabled]text-align: center; */
+}
+}
+
+</style>
+</head>
+
+<body>
+<wrapper>
+<header> 
+		<img id="icon" src="menu.png" alt="Navigation icon. Click to expand navigation menu."/>
+		<img id="x_icon" src="x.png" alt="Exit out icon. Click to close navigation menu." style="display: none;" />
+<img src="logo.jpg" alt="" width="230" class="logo">
+  </header>
+  <nav id="nav">
+    <ul>
+	<a href="#work" id="work_link">
+		<li>Our Projects</li>
+		</a>
+	<a href="#about" id="about_link">
+        <li>About Us</li>
+		</a>
+	<a href="#contact" id="contact_link">
+		<li>Contact Us</li>
+		</a>
+    </ul>
+  </nav>
+
+
+
+  <section id="work">
+	<h2>Our Projects</h2>
+    <div class="services"><img src="gardening.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Gardening Tips</h3>
+		<p>Explore the joy of cultivating a thriving garden—be it a colorful flower bed, a productive vegetable garden, or a lush orchard. Gardening is a rewarding escape where anyone can find peace and happiness.</p>
+	</div>
+    <div class="services"><img src="gardening2.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Workshop and Education</h3>
+		<p>At Blooming Garden, we believe it's never too late to learn. Our knowledgeable team is passionate about teaching how gardening can enhance well-being and support a more sustainable, eco-friendly lifestyle.</p>
+	</div>
+	<div class="services"> <img src="gardening3.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Environmental Awareness</h3>
+		<p>Gardening offers more than beauty—it nurtures the planet. Recognizing its environmental benefits empowers us to grow with purpose and care for the Earth.</p>
+	</div>
+	<div class="services"> <img src="gardening4.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Health Benefits of Gardening</h3>
+		<p>Gardening offers a wealth of health advantages. Learn how growing your own vegetables can boost your well-being, explore the best plants for every season, and uncover the unique health benefits of various vegetables.</p>
+	</div>
+  </section>
+
+  <section class="minor" id="about">
+	<h2>About Blooming Garden</h2>
+	<div class="about">
+    <img src="gardening5.jpg" width="100%" height="auto" alt=""/>
+	</div>
+    <div class="about" style="margin-left: 10px">
+      <h3>Our Community in Blooming Garden</h3>
+      <p>At Blooming Garden, we’re a passionate community united by a love for gardening and its power to enrich our environment, health, and knowledge. We welcome anyone who:</p>
+    <ul class="aboutlist">
+    	<li style="color: #000; font-family: pt-sans, sans-serif; font-size: 20px">- Want to explore and master the art of gardening</li>
+		<li style="color: #000; font-family: pt-sans, sans-serif; font-size: 20px">- Find peace and fulfillment in nurturing plants and enjoying the fruits of their efforts</li>
+		<li style="color: #000; font-family: pt-sans, sans-serif; font-size: 20px">- Are committed to creating a positive impact on the environment</li>
+		<li style="color: #000; font-family: pt-sans, sans-serif; font-size: 20px">- Have free time and are eager to embrace a rewarding, nature-inspired hobby</li>
+	</ul>
+</div>
+  </section>
+
+  <section id="contact">
+	<h2>Contact Us</h2>
+	<p>Contact us through: <b style="color: #BF784E">bloominggarden@work</b>.
+	<br>
+	Call through: <b style="color: #BF784E">123-456-7890</b>
+	<br>
+	Fax is: <b style="color: #BF784E">1-800-111-1111</b>
+	<br>
+	Shipping by email to: <b style="color: #BF784E">Gardener's Supply Co. 128 Intervale Road Burlington, VT 05401</b>
+	</p>
+  </section>
+  <footer>&copy; 2025, Maria Fernanda Costa.
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
