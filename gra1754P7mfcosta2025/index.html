@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Brazil Travel Agency | Maria Fernanda Costa | 2025</title>
+	 <script type="text/javascript">
+window.onload = function () {
+	document.getElementById("password1").onchange = validatePassword;
+	document.getElementById("password2").onchange = validatePassword;
+}
+function validatePassword(){
+var pass2=document.getElementById("password2").value;
+var pass1=document.getElementById("password1").value;
+if(pass1!=pass2)
+	document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+else
+	document.getElementById("password2").setCustomValidity('');	 
+//empty string means no validation error
+}
+</script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<wrapper>
+  <header>
+    <img src="img/brazil logo.jpg" alt="Brazil Travel Logo"/> </header>
+    
+  <main>
+    <h1>Come Explore Brazil Today!</h1>
+    <h2>Submit Your Contact Information.<br />An Agent Will Contact You Soon.</h2>
+    <h3>All fields are REQUIRED unless noted otherwise.</h3>
+    <form action="confirm.html">
+      <section>
+        <div id="salute">
+          <label>Salutation</label>
+            
+            <select name="salutation_txt"
+          required="required" id="salutation_txt">
+              <option value="0"
+            selected="selected">Salutation</option>
+              <option value="1">Mr.</option>
+              <option value="2">Mrs.</option>
+              <option value="3">Miss</option>
+              <option value="4">Ms.</option>
+              <option value="5">None</option>
+          </select>
+        </div>
+        <div id="first">
+          <label>First Name</label>
+          <input name="firstname_txt" type="text" required="required" id="firstname_txt" placeholder="First Name">
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input name="lastname_txt" type="text" required="required" id="lastname_txt" placeholder="Last Name">
+        </div>
+        <div>
+          <label>Birthdate</label>
+          <input name="birthdate_txt" type="date" required="required" id="birthdate_txt">
+        </div>
+        <div>
+          <label>Primary Phone Number</label>
+          <input name="phone_txt" type="tel" required="required" id="phone_txt"
+         placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div>
+          <label>Address</label>
+          <input name="address_txt" type="text" required="required" id="address_txt" placeholder="Enter Street Address">
+        </div>
+        <div>
+          <label>Additional Address Info (Optional)</label>
+          <input name="address2_txt" type="text" id="address2_txt" placeholder="Enter Apt., Unit or Floor">
+        </div>
+      </section>
+      <section>
+        <label>City</label>
+          <input name="city_txt" type="text" required="required" id="city_txt" placeholder="Enter City">
+        <label>State</label>
+          <select name="states_txt" required="required" id="states_txt">
+            <option value="0" selected="selected">State</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AS">American Samoa</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="DC">Dist. of Columbia</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="GU">Guam</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MH">Marshall Islands</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="FM">Micronesia</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="MP">Northern Marianas</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PW">Palau</option>
+<option value="PA">Pennsylvania</option>
+<option value="PR">Puerto Rico</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="VI">Virgin Islands</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+          </select>
+        <label>Zip Code</label>
+          <input name="zipcode_txt" type="text" required="required" id="zipcode_txt" placeholder="Zip Code" pattern="[0-9]{5}">
+        <label>Email</label>
+          <input name="email_txt" type="email" required="required" id="email_txt" placeholder="you@example.com">
+        <label>Password</label>
+          <input name="password1" type="password" required="required" id="password1" placeholder="Must Consist of 6-12 Uppercase and/or Lowercase Letters and/or Numbers" pattern="[0-9A-Za-z]{6-12}">
+        <label>Confirm Password</label>
+          <input name="password2" type="password" required="required" id="password2" placeholder="Must Match Original Password">
+        <label>I Agree to the Terms and Conditions</label>
+          <input name="tandc_txt" type="checkbox" required="required" id="tandc_txt">
+      </section>
+        <input name="submit_btn" type="submit" id="submit_btn" value="Join Now">
+    </form>
+  </main>
+  <footer>© 2025, Maria Fernanda Costa.This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+
